@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Math Submission Form</title>
+	<title>Postage Form</title>
 </head>
 <body>
-	<h1>Math Submission Form</h1>
-	<form action="/math" method="get">
-		<select name="operation">
-			<option>Add</option>
-			<option>Subtract</option>
-			<option>Multiply</option>
-			<option>Divide</option>
+	<h1>Postage Form</h1>
+	<form action="/postage" method="get">
+        <input type="number" name="weight">
+		<select name="type">
+			<option>Stamped Letters</option>
+			<option>Metered Letters</option>
+			<option>Large Envelopes</option>
+			<option>First-Class Package</option>
 		</select>
-
-		<input type="text" name="operand1">
-		<input type="text" name="operand2">
 
 		<br><br>
 		<input type="submit" value="Get Result">
